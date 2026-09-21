@@ -4,8 +4,10 @@
     "name": "SCUB Essential Tee",
     "price": 1299,
     "category": "T-Shirts",
+    "description": "A clean everyday essential designed with a simple silhouette and comfortable feel.",
     "images": ["/products/tee-white.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L", "XL"],
     "colors": ["White", "Black"],
     "inStock": true
   },
@@ -14,8 +16,10 @@
     "name": "SCUB Oversized Tee",
     "price": 1499,
     "category": "T-Shirts",
+    "description": "A relaxed oversized tee made for an effortless everyday look.",
     "images": ["/products/tee-black.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L", "XL"],
     "colors": ["Black", "White"],
     "inStock": true
   },
@@ -24,8 +28,10 @@
     "name": "SCUB Everyday Hoodie",
     "price": 2499,
     "category": "Hoodies",
+    "description": "A minimal everyday hoodie with a comfortable fit for cooler days.",
     "images": ["/products/hoodie.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L", "XL"],
     "colors": ["Black", "White"],
     "inStock": true
   },
@@ -34,8 +40,10 @@
     "name": "SCUB Relaxed Shirt",
     "price": 1999,
     "category": "Shirts",
+    "description": "A relaxed shirt with a clean design made for everyday styling.",
     "images": ["/products/shirt.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L"],
     "colors": ["White", "Black"],
     "inStock": true
   },
@@ -44,8 +52,10 @@
     "name": "SCUB Daily Pants",
     "price": 2199,
     "category": "Bottoms",
+    "description": "Minimal everyday pants designed for comfortable daily wear.",
     "images": ["/products/pants.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": ["S", "M", "L", "XL"],
     "colors": ["Black"],
     "inStock": true
   },
@@ -54,8 +64,10 @@
     "name": "SCUB Studio Tee",
     "price": 1399,
     "category": "T-Shirts",
+    "description": "A refined studio-inspired tee with a simple SCUB aesthetic.",
     "images": ["/products/studio-tee.jpg"],
     "sizes": ["S", "M", "L", "XL"],
+    "availableSizes": [],
     "colors": ["White"],
     "inStock": false
   }

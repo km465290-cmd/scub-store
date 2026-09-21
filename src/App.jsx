@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import products from './data/products.json'
 
 function ProductImage({ product }) {
@@ -43,6 +44,7 @@ function App() {
       <main>
 
         {/* HERO */}
+
         <section className="hero">
 
           <p className="hero-label">
@@ -68,6 +70,7 @@ function App() {
         </section>
 
         {/* COLLECTION */}
+
         <section className="collection">
 
           <div className="collection-header">
@@ -105,80 +108,89 @@ function App() {
 
           </div>
 
+          {/* PRODUCT GRID */}
+
           {filteredProducts.length > 0 ? (
             <div className="product-grid">
 
               {filteredProducts.map((product) => (
-                <article
+
+                <Link
                   key={product.id}
-                  className="product-card"
+                  to={`/product/${product.id}`}
+                  className="product-card-link"
                 >
 
-                  <div className="product-image-wrapper">
+                  <article className="product-card">
 
-                    <ProductImage product={product} />
+                    <div className="product-image-wrapper">
 
-                    {!product.inStock && (
-                      <div className="sold-out">
-                        Sold out
-                      </div>
-                    )}
+                      <ProductImage product={product} />
 
-                  </div>
+                      {!product.inStock && (
+                        <div className="sold-out">
+                          Sold out
+                        </div>
+                      )}
 
-                  <div className="product-info">
+                    </div>
 
-                    <div className="product-main-info">
+                    <div className="product-info">
 
-                      <div>
+                      <div className="product-main-info">
 
-                        <h3 className="product-name">
-                          {product.name}
-                        </h3>
+                        <div>
 
-                        <p className="product-category">
-                          {product.category}
+                          <h3 className="product-name">
+                            {product.name}
+                          </h3>
+
+                          <p className="product-category">
+                            {product.category}
+                          </p>
+
+                        </div>
+
+                        <p className="product-price">
+                          ₹{product.price.toLocaleString('en-IN')}
                         </p>
 
                       </div>
 
-                      <p className="product-price">
-                        ₹{product.price.toLocaleString('en-IN')}
-                      </p>
+                      <div className="product-details">
+
+                        <span>
+                          {product.colors.join(' / ')}
+                        </span>
+
+                        <span>•</span>
+
+                        <span>
+                          {product.sizes.join(' / ')}
+                        </span>
+
+                      </div>
 
                     </div>
 
-                    <div className="product-details">
+                  </article>
 
-                      <span>
-                        {product.colors.join(' / ')}
-                      </span>
+                </Link>
 
-                      <span>•</span>
-
-                      <span>
-                        {product.sizes.join(' / ')}
-                      </span>
-
-                    </div>
-
-                  </div>
-
-                </article>
               ))}
 
             </div>
           ) : (
             <div className="empty-products">
-              <h3>
-                No products found.
-              </h3>
+              <h3>No products found.</h3>
             </div>
           )}
 
         </section>
 
       </main>
+
+      {/* FOOTER */}
 
       <footer className="footer">
 
