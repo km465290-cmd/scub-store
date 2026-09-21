@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import products from './data/products.json'
+import StoreHeader from './components/StoreHeader'
+import CartDrawer from './components/CartDrawer'
 
 function ProductImage({ product }) {
   const [imageError, setImageError] = useState(false)
@@ -41,9 +43,11 @@ function App() {
   return (
     <div className="scub-page">
 
-      <main>
+      <StoreHeader />
 
-        {/* HERO */}
+      <CartDrawer />
+
+      <main>
 
         <section className="hero">
 
@@ -68,8 +72,6 @@ function App() {
           </p>
 
         </section>
-
-        {/* COLLECTION */}
 
         <section className="collection">
 
@@ -98,7 +100,9 @@ function App() {
                       ? 'active'
                       : ''
                   }`}
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() =>
+                    setSelectedCategory(category)
+                  }
                 >
                   {category}
                 </button>
@@ -108,9 +112,8 @@ function App() {
 
           </div>
 
-          {/* PRODUCT GRID */}
-
           {filteredProducts.length > 0 ? (
+
             <div className="product-grid">
 
               {filteredProducts.map((product) => (
@@ -180,17 +183,20 @@ function App() {
               ))}
 
             </div>
+
           ) : (
+
             <div className="empty-products">
-              <h3>No products found.</h3>
+              <h3>
+                No products found.
+              </h3>
             </div>
+
           )}
 
         </section>
 
       </main>
-
-      {/* FOOTER */}
 
       <footer className="footer">
 
