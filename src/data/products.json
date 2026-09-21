@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "SCUB Essential Tee",
+    "price": 1299,
+    "category": "T-Shirts",
+    "images": ["/products/tee-white.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White", "Black"],
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "SCUB Oversized Tee",
+    "price": 1499,
+    "category": "T-Shirts",
+    "images": ["/products/tee-black.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "White"],
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "SCUB Everyday Hoodie",
+    "price": 2499,
+    "category": "Hoodies",
+    "images": ["/products/hoodie.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "White"],
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "SCUB Relaxed Shirt",
+    "price": 1999,
+    "category": "Shirts",
+    "images": ["/products/shirt.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White", "Black"],
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "SCUB Daily Pants",
+    "price": 2199,
+    "category": "Bottoms",
+    "images": ["/products/pants.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black"],
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "SCUB Studio Tee",
+    "price": 1399,
+    "category": "T-Shirts",
+    "images": ["/products/studio-tee.jpg"],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["White"],
+    "inStock": false
+  }
+]
